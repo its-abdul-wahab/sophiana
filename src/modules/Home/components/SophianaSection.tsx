@@ -4,10 +4,10 @@ const SophianaSection = () => {
   return (
     <div className="py-[65px] bg-skin">
       <Container className="!max-w-[533px]">
-        <h3 className="text-center text-3xl mb-4 font-cormorant-semibold">
+        <h3 className="text-left sm:text-center text-3xl mb-4 font-cormorant-semibold">
           What is Sophiana?
         </h3>
-        <p className="text-center text-base font-crimson-regular">
+        <p className="text-left sm:text-center text-base font-crimson-regular">
           At Sophiana, we bring stunning jewels, arts and exclusive leather
           goods to global audiences. By joining our curated network, your
           products will reach access to a pool of dedicated digital resellers

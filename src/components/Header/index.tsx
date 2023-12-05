@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Container } from "../Container";
+import { Menu } from "../../assets/icons";
 
 const LeftNavigation = [
   {
@@ -30,11 +31,12 @@ const RightNavigation = [
 const Header = () => {
   return (
     <>
-      <div className="h-6 bg-skin"></div>
+      <div className="h-3.5 sm:h-6 bg-skin"></div>
       <nav className="w-full bg-primary z-30 shadow sticky top-0">
         <Container size="md">
-          <div className="flex items-center justify-between md:py-5">
-            <ul className="items-center justify-center md:flex md:space-x-6">
+          <div className="flex items-center justify-center relative lg:justify-between py-3 sm:py-5">
+            <Menu className="lg:hidden absolute left-0" />
+            <ul className="items-center justify-center space-x-6 hidden lg:flex">
               {LeftNavigation?.map((item, i) => (
                 <Link to={item.href} key={i}>
                   <li className="mb-5 text-secondary text-sm font-crimson-regular md:mb-0">
@@ -44,11 +46,11 @@ const Header = () => {
               ))}
             </ul>
             <Link to="/">
-              <h2 className="text-xl tracking-[5px] font-inter-light text-secondary">
+              <h2 className="text-base sm:text-xl tracking-[5px] font-inter-light text-secondary">
                 SOPHIANA
               </h2>
             </Link>
-            <ul className="items-center justify-center md:flex md:space-x-6">
+            <ul className="items-center justify-center space-x-6 hidden lg:flex">
               {RightNavigation?.map((item, i) => (
                 <Link to={item.href} key={i}>
                   <li className="mb-5 text-secondary text-sm font-crimson-regular md:mb-0">
