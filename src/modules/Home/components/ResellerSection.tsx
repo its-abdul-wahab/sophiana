@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const ResellerSection = () => {
   return (
     <div className="sm:py-[6.35rem]">
-      <Container className="px-0">
+      <Container className="!px-0">
         <div className="relative sm:flex justify-between items-center gap-[5.5rem] xl:gap-[9.25rem]">
           <div className="flex-1">
             <img src={images.network} alt="GLOBAL REACH" />
