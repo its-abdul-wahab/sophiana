@@ -9,7 +9,7 @@ const navigation = {
 export default function Footer() {
   return (
     <>
-      <footer className="bg-skin">
+      <footer className="bg-skin relative">
         <div className="max-w-[662px] px-4 mx-auto pt-12">
           <div className="flex items-center justify-between py-12 px-8 border-t border-primary">
             {navigation.main.map((item) => (
@@ -26,7 +26,7 @@ export default function Footer() {
         </div>
       </footer>
       <div className="py-3 bg-[#DDD9D4]">
-        <p className="text-center text-base font-inter-regular tracking-[3.75px] text-[#7E7C7C] ">
+        <p className="text-center text-sm font-inter-regular tracking-[3.75px] text-[#7E7C7C] ">
           SOPHIANA 2024
         </p>
       </div>

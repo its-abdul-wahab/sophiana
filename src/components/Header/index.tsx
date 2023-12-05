@@ -4,7 +4,7 @@ import { Container } from "../Container";
 const LeftNavigation = [
   {
     name: "Product Listings",
-    href: "",
+    href: "/coming-soon",
   },
   {
     name: "Dealer / Personal Shopper Sign-up",
