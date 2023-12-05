@@ -15,7 +15,6 @@ build
 # package-lock.json
 .env
 /.vs
-ruffyworld
 yarn.lock
 public/sw.js
 .DS_Store

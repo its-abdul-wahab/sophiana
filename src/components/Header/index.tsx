@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <>
       <div className="h-6 bg-skin"></div>
-      <nav className="w-full bg-primary shadow sticky top-0">
+      <nav className="w-full bg-primary z-30 shadow sticky top-0">
         <Container size="md">
           <div className="flex items-center justify-between md:py-5">
             <ul className="items-center justify-center md:flex md:space-x-6">

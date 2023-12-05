@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.bd {
-  border: 1px solid red;
+@layer base {
+  body {
+    @apply leading-normal text-primary m-0 p-0;
+  }
+}
+
+@layer utilities {
+  .bd {
+    border: 1px solid red;
+  }
 }
