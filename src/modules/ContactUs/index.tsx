@@ -1,7 +1,13 @@
-import React from "react";
+import BannerSection from "./components/BannersSection";
+import ContactInfoSection from "./components/ContactInfoSection";
 
 const ContactUs = () => {
-  return <div>Contact Us</div>;
+  return (
+    <>
+      <BannerSection />
+      <ContactInfoSection />
+    </>
+  );
 };
 
 export default ContactUs;
