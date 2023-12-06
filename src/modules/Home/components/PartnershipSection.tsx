@@ -25,7 +25,7 @@ const PartnershipSection = () => {
           For Brands, Designers & Jewelers
         </p>
       </div>
-      <Container className="mt-8 px-0 sm:px-4 sm:mt-[8.75rem]">
+      <Container className="mt-8 !px-0 sm:px-4 sm:mt-[8.75rem]">
         <div className="flex justify-between items-center sm:flex-row flex-col gap-[5.5rem] xl:gap-[9.25rem]">
           <div className="flex-1">
             <img src={images.partner_1} alt="GLOBAL REACH" />
