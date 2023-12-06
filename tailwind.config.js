@@ -20,6 +20,7 @@ module.exports = {
         primary: "#413D3D",
         secondary: "#F4F4F4",
         skin: "#F4EBDE",
+        borderColor: "#636262",
       },
     },
   },

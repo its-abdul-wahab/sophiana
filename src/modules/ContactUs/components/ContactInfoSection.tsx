@@ -22,7 +22,7 @@ const TreasuresSection = () => {
             <Input placeholder="COMPANY" />
             <Input placeholder="LOCATION*" />
             <Input placeholder="PHONE NUMBER*" type="number" />
-            <div className="border border-[#636262] p-2">
+            <div className="border border-borderColor p-2">
               <p className="text-[10px] mb-2 font-inter-extraLight text-primary">
                 TELL US WHO YOU ARE*
               </p>
@@ -40,7 +40,7 @@ const TreasuresSection = () => {
               <Button
                 variant="outline"
                 color="primary"
-                className="!text-sm w-[247px] !py-1 !font-inter-medium !border-[#636262]"
+                className="!text-sm w-[247px] !py-1 !font-inter-medium !border-borderColor"
               >
                 Submit
               </Button>
