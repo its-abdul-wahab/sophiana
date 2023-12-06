@@ -22,6 +22,9 @@ module.exports = {
         skin: "#F4EBDE",
         borderColor: "#636262",
       },
+      screens: {
+        xs: { min: "300px", max: "400px" },
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],
