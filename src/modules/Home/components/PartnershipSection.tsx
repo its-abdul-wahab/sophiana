@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const PartnershipSection = () => {
   return (
-    <div className="py-[3.5rem] sm:py-[6.35rem]">
+    <div className="py-[3.5rem] sm:py-[6.35rem]" id="partner">
       <div className="w-full justify-center border-t border-primary relative hidden sm:flex">
         <div className="absolute top-1/2 -translate-y-1/2 bg-white">
           <h2 className="text-3xl px-10 lg:px-16  whitespace-nowrap font-crimson-regular">

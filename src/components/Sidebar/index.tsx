@@ -1,13 +1,5 @@
 import { Link } from "react-router-dom";
 import { Cross } from "../../assets/icons";
-
-const navigation = [
-  { name: "Dealers", href: "/" },
-  { name: "Overview", href: "/" },
-  { name: "Overview", href: "/" },
-  { name: "Overview", href: "/" },
-];
-
 interface IProps {
   setSidebarOpen?: Function;
   sidebarOpen?: boolean;
@@ -15,36 +7,94 @@ interface IProps {
 
 const Sidebar = ({ sidebarOpen, setSidebarOpen }: IProps) => {
   return (
-    <div
-      className={`${
-        sidebarOpen ? "w-[350px]" : "w-0"
-      } flex h-full bd grow flex-col overflow-y-auto bg-red-400 px-2 absolute z-30 top-0 left-0`}
-    >
-      <nav className="flex flex-1 flex-col">
-        <ul className="space-y-1">
-          {navigation.map((item) => (
-            <li key={item.name}>
-              <Link to={item.href}>
-                <p
-                  className={
-                    "text-white hover:text-black hover:bg-primary group flex gap-x-3 rounded-md p-2 text-base leading-6"
-                  }
-                >
-                  <i
-                    className={
-                      "text-secondary group-hover:text-black text-lg shrink-0 flex items-center justify-center"
-                    }
-                    aria-hidden="true"
-                  />
-                  {item.name}
-                </p>
+    <>
+      <div
+        onClick={() => setSidebarOpen && setSidebarOpen(false)}
+        className={`${
+          sidebarOpen ? "block" : "hidden"
+        } absolute h-screen bg-black/70 z-30 top-0 left-0 w-full`}
+      ></div>
+      <div
+        className={`${
+          sidebarOpen
+            ? "w-[393px] sm:w-[620px] md:w-[750px]"
+            : "w-0 overflow-hidden"
+        } flex h-full grow flex-col overflow-y-auto bg-white absolute z-40 top-0 left-0 duration-300 pb-10`}
+      >
+        <nav className="flex flex-1 flex-col">
+          <h1 className="text-black mt-16 sm:mt-[109px] ml-11 sm:ml-[93px] text-lg sm:text-2xl font-inter-regular">
+            HOME
+          </h1>
+          <div className="max-w-[393px] sm:max-w-[650px] mt-7 pl-6 relative">
+            <hr className="absolute inset-0 w-[80%] border-primary" />
+            <h2 className="text-[#030303] font-cormorant-garamond text-2xl sm:text-3xl italic pt-8">
+              Dealers
+            </h2>
+            <ul className="pl-6 sm:ml-16">
+              <a href="/#partner">
+                <li className="text-black mt-8 text-lg sm:text-2xl font-inter-regular cursor-pointer">
+                  PARTNERSHIP PROGRAM
+                </li>
+              </a>
+              <Link to="/contact-us">
+                <li className="text-black mt-5 text-lg sm:text-2xl font-inter-regular italic">
+                  SIGN UP NOW
+                </li>
               </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
-      <Cross className="absolute right-3 top-3" />
-    </div>
+            </ul>
+
+            <h2 className="text-[#030303] font-cormorant-garamond text-2xl sm:text-3xl italic pt-11">
+              Personal Shoppers
+            </h2>
+            <ul className="pl-6 sm:ml-16">
+              <Link to="/coming-soon">
+                <li className="text-black  mt-8 text-lg sm:text-2xl font-inter-regular">
+                  PRODUCT LISTINGS
+                </li>
+              </Link>
+              <Link to="/contact-us">
+                <li className="text-black mt-5 text-lg sm:text-2xl font-inter-regular italic">
+                  GET ACCESS
+                </li>
+              </Link>
+            </ul>
+          </div>
+          <div className="max-w-[393px] relative sm:max-w-[650px] mt-7 pl-7 ">
+            <hr className="absolute inset-0 w-[80%] border-primary" />
+            <h2 className="text-[#030303] font-cormorant-garamond text-2xl sm:text-3xl italic pt-7">
+              Concierge Area
+            </h2>
+            <ul className="pl-6 sm:ml-16">
+              <Link to="/contact-us">
+                <li className="text-black mt-8 text-lg sm:text-2xl font-inter-regular">
+                  PERSONAL SHOPPER SERVICE
+                </li>
+              </Link>
+              <Link to="/about-us">
+                <li className="text-black mt-5 text-lg sm:text-2xl font-inter-regular">
+                  ABOUT SOPHIANA
+                </li>
+              </Link>
+              <Link to="/contact-us">
+                <li className="text-black mt-5 text-lg sm:text-2xl font-inter-regular">
+                  CONTACT US
+                </li>
+              </Link>
+            </ul>
+          </div>
+        </nav>
+        <div
+          className="absolute right-10 sm:right-[90px] top-8 sm:top-[62px]"
+          onClick={() => {
+            if (setSidebarOpen) {
+              setSidebarOpen(false);
+            }
+          }}
+        >
+          <Cross />
+        </div>
+      </div>
+    </>
   );
 };
 

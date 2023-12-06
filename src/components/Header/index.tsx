@@ -76,9 +76,8 @@ const Header = () => {
           </div>
         </Container>
       </nav>
-      {sidebarOpen && (
-        <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-      )}
+
+      <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
     </>
   );
 };
