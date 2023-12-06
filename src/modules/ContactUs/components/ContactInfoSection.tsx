@@ -26,9 +26,13 @@ const TreasuresSection = () => {
               <p className="text-[10px] mb-2 font-inter-extraLight text-primary">
                 TELL US WHO YOU ARE*
               </p>
-              <FormCheck type="radio" label="JEWELLER" />
-              <FormCheck type="radio" label="PERSONAL SHOPPER" />
-              <FormCheck type="radio" label="COLLECTORS" />
+              <FormCheck type="radio" label="JEWELLER" name="JEWELLER" />
+              <FormCheck
+                type="radio"
+                label="PERSONAL SHOPPER"
+                name="JEWELLER"
+              />
+              <FormCheck type="radio" label="COLLECTORS" name="JEWELLER" />
             </div>
             <Input placeholder="WHATSAPP/LINE/WECHAT:" />
             <Textarea
