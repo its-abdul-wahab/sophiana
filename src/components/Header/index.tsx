@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { Container } from "../Container";
 import { Menu } from "../../assets/icons";
+import Sidebar from "../Sidebar";
+import { useState } from "react";
 
 const LeftNavigation = [
   {
@@ -29,13 +31,19 @@ const RightNavigation = [
 ];
 
 const Header = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
     <>
       <div className="h-3.5 sm:h-6 bg-skin"></div>
       <nav className="w-full bg-primary z-30 shadow sticky top-0">
         <Container size="md">
           <div className="flex items-center justify-center relative lg:justify-between py-3 sm:py-5">
-            <Menu className="lg:hidden absolute left-0" />
+            <div
+              className="lg:hidden absolute left-0"
+              onClick={() => setSidebarOpen(true)}
+            >
+              <Menu />
+            </div>
             <ul className="items-center justify-center space-x-6 hidden lg:flex">
               {LeftNavigation?.map((item, i) => (
                 <Link to={item.href} key={i}>
@@ -68,6 +76,9 @@ const Header = () => {
           </div>
         </Container>
       </nav>
+      {sidebarOpen && (
+        <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+      )}
     </>
   );
 };
