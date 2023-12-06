@@ -12,7 +12,7 @@ interface SsProps {
 }
 
 const sizeStyles: SsProps = {
-  sm: "mx-auto px-4 md:max-w-[1028px]",
+  sm: "mx-auto px-4 max-w-[824px] xl:max-w-[1028px]",
   md: "mx-auto px-4 md:max-w-[1248px]",
 };
 

@@ -26,7 +26,7 @@ const variantStyles: VsProps = {
 
 const sizeStyles: SsProps = {
   sm: "px-2.5 py-1 text-xs",
-  md: "px-3 py-3 text-[15px]",
+  md: "px-3 py-3 text-base",
   lg: "px-7 py-2 text-base",
 };
 export const Button = ({
