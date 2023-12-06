@@ -7,6 +7,8 @@ import treasure_3 from "./treasure-3.png";
 import treasure_4 from "./treasure-4.png";
 import network from "./network.png";
 import contact from "./contact.png";
+import about from "./about.png";
+import coming from "./coming-soon.png";
 
 export const images = {
   banner,
@@ -18,4 +20,6 @@ export const images = {
   treasure_4,
   network,
   contact,
+  about,
+  coming,
 };

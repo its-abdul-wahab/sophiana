@@ -1,3 +1,5 @@
+import { useLocation } from "react-router-dom";
+
 const navigation = {
   main: [
     { name: "+ 1-212-345-6789", href: "#" },
@@ -7,9 +9,22 @@ const navigation = {
 };
 
 export default function Footer() {
+  const location = useLocation();
+  const { pathname } = location;
+
+  console.log(pathname, "pathname");
+
   return (
     <>
-      <footer className="bg-skin relative">
+      <footer
+        className={`${
+          pathname === "/about-us" ||
+          pathname === "/contact-us" ||
+          pathname === "/coming-soon"
+            ? "hidden sm:block"
+            : "block"
+        } bg-skin relative`}
+      >
         <div className="max-w-[662px] px-4 mx-auto py-5 sm:pt-12">
           <div className="flex items-center justify-between flex-col sm:flex-row sm:py-12 px-8 sm:border-t border-primary">
             {navigation.main.map((item) => (

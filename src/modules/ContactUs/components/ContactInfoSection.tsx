@@ -21,7 +21,7 @@ const TreasuresSection = () => {
             <Input placeholder="EMAIL ADDRESS*" />
             <Input placeholder="COMPANY" />
             <Input placeholder="LOCATION*" />
-            <Input placeholder="PHONE NUMBER*" />
+            <Input placeholder="PHONE NUMBER*" type="number" />
             <div className="border border-[#636262] p-2">
               <p className="text-[10px] mb-2 font-inter-extraLight text-primary">
                 TELL US WHO YOU ARE*
@@ -36,7 +36,7 @@ const TreasuresSection = () => {
               className="h-[243px]"
               placeholder="MESSAGE*  For applying, please include your website, social media if you have any."
             />
-            <div className="text-center pt-12">
+            <div className="text-center pt-10 pb-20 sm:pb-0 sm:pt-12">
               <Button
                 variant="outline"
                 color="primary"

@@ -4,6 +4,7 @@ import Home from "./modules/Home";
 import Footer from "./components/Footer";
 import AboutUs from "./modules/AboutUs";
 import ContactUs from "./modules/ContactUs";
+import ComingSoon from "./modules/ComingSoon";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/coming-soon" element={<ComingSoon />} />
       </Routes>
       <Footer />
     </>
