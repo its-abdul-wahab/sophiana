@@ -1,11 +1,24 @@
 import { Link } from "react-router-dom";
 import { Cross } from "../../assets/icons";
+import { useEffect } from "react";
 interface IProps {
   setSidebarOpen?: Function;
   sidebarOpen?: boolean;
 }
 
 const Sidebar = ({ sidebarOpen, setSidebarOpen }: IProps) => {
+  useEffect(() => {
+    const body = document.body;
+    if (sidebarOpen) {
+      body.classList.add("overflow-hidden");
+    } else {
+      body.classList.remove("overflow-hidden");
+    }
+
+    return () => {
+      body.classList.remove("overflow-hidden");
+    };
+  }, [sidebarOpen]);
   return (
     <>
       <div
