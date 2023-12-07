@@ -15,7 +15,7 @@ const AboutUs = () => {
         className="bg-cover bg-center h-[calc(100vh-6.31rem)] sm:h-[calc(100vh-20.31rem)] bg-fixed text-secondary text-center flex flex-col justify-center items-center"
         style={{ backgroundImage: `url(${images.about})` }}
       >
-        <div className="max-w-[564px] mx-auto mb-8 sm:mb-24">
+        <div className="max-w-[564px] mx-auto mb-6 lg:mb-20">
           <h1 className="text-2xl sm:text-[2.5rem] mb-4 sm:mb-9  leading-snug font-cormorant-garamond  sm:font-crimson-regular">
             THE SOPHIANA{" "}
             <span className="italic block sm:inline">DIFFERENCE</span>

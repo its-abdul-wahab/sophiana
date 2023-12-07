@@ -59,7 +59,7 @@ const Input = ({
         className={clsx(
           className,
           sizeStyles[size],
-          "block w-full border border-borderColor tracking-widest bg-transparent text-primary placeholder:text-[10px] font-inter-extraLight  outline-none placeholder:text-[#333232] !focus:ring-[0.5] !ring-black focus:border-black focus:shadow-[0_0_0_0.01rem] disabled:cursor-not-allowed disabled:bg-[#e9ecef]"
+          "block w-full border border-borderColor tracking-widest bg-transparent text-primary placeholder:text-[10px] font-inter-extraLight  outline-none placeholder:text-[#333232] !ring-black focus:shadow-[0_0_0_0.01rem] disabled:cursor-not-allowed disabled:bg-[#e9ecef] focus:border-black focus:outline-none focus:ring-0"
         )}
         pattern={pattern}
         max={max}

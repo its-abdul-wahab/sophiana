@@ -17,9 +17,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: IProps) => {
       <div
         className={`${
           sidebarOpen
-            ? "xs:w-full w-[393px] sm:w-[620px] md:w-[750px]"
+            ? "xs:w-full w-[393px] sm:w-[620px] md:w-[750px] "
             : "w-0 overflow-hidden"
-        } flex h-screen grow flex-col overflow-y-auto bg-white absolute z-40 top-0 left-0 duration-300 pb-10`}
+        } flex h-screen grow flex-col overflow-y-auto bg-white fixed z-40 top-0 left-0 duration-300 pb-10`}
       >
         <nav className="flex flex-1 flex-col">
           <h1 className="text-black mt-16 sm:mt-[109px] ml-11 sm:ml-[93px] text-lg sm:text-2xl font-inter-regular">
@@ -37,7 +37,10 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: IProps) => {
                 </li>
               </a>
               <Link to="/contact-us">
-                <li className="text-black mt-5 text-lg sm:text-2xl font-inter-regular italic">
+                <li
+                  onClick={() => setSidebarOpen && setSidebarOpen(false)}
+                  className="text-black mt-5 text-lg sm:text-2xl font-inter-regular italic"
+                >
                   SIGN UP NOW
                 </li>
               </Link>
@@ -48,12 +51,18 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: IProps) => {
             </h2>
             <ul className="pl-6 sm:ml-16">
               <Link to="/coming-soon">
-                <li className="text-black  mt-8 text-lg sm:text-2xl font-inter-regular">
+                <li
+                  onClick={() => setSidebarOpen && setSidebarOpen(false)}
+                  className="text-black  mt-8 text-lg sm:text-2xl font-inter-regular"
+                >
                   PRODUCT LISTINGS
                 </li>
               </Link>
               <Link to="/contact-us">
-                <li className="text-black mt-5 text-lg sm:text-2xl font-inter-regular italic">
+                <li
+                  onClick={() => setSidebarOpen && setSidebarOpen(false)}
+                  className="text-black mt-5 text-lg sm:text-2xl font-inter-regular italic"
+                >
                   GET ACCESS
                 </li>
               </Link>
@@ -66,17 +75,26 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: IProps) => {
             </h2>
             <ul className="pl-6 sm:ml-16">
               <Link to="/contact-us">
-                <li className="text-black mt-8 text-lg sm:text-2xl font-inter-regular">
+                <li
+                  onClick={() => setSidebarOpen && setSidebarOpen(false)}
+                  className="text-black mt-8 text-lg sm:text-2xl font-inter-regular"
+                >
                   PERSONAL SHOPPER SERVICE
                 </li>
               </Link>
               <Link to="/about-us">
-                <li className="text-black mt-5 text-lg sm:text-2xl font-inter-regular">
-                  ABOUT SOPHIANA
+                <li
+                  onClick={() => setSidebarOpen && setSidebarOpen(false)}
+                  className="text-black mt-5 text-lg sm:text-2xl font-inter-regular"
+                >
+                  ABOUT <span className="italic">SOPHIANA</span>
                 </li>
               </Link>
               <Link to="/contact-us">
-                <li className="text-black mt-5 text-lg sm:text-2xl font-inter-regular">
+                <li
+                  onClick={() => setSidebarOpen && setSidebarOpen(false)}
+                  className="text-black mt-5 text-lg sm:text-2xl font-inter-regular"
+                >
                   CONTACT US
                 </li>
               </Link>

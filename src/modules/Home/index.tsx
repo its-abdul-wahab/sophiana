@@ -19,15 +19,9 @@ const Home = () => {
       <FadeInOnScroll>
         <SophianaSection />
       </FadeInOnScroll>
-      <FadeInOnScroll>
-        <PartnershipSection />
-      </FadeInOnScroll>
-      <FadeInOnScroll>
-        <TreasuresSection />
-      </FadeInOnScroll>
-      <FadeInOnScroll>
-        <ResellerSection />
-      </FadeInOnScroll>
+      <PartnershipSection />
+      <TreasuresSection />
+      <ResellerSection />
       <ScrollBehavior />
     </>
   );

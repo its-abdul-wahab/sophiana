@@ -57,7 +57,7 @@ const Textarea: React.FC<IProps> = ({
         className={clsx(
           className,
           sizeStyles[size],
-          `  focus:shadow-outline relative z-30 block w-full tracking-widest placeholder:text-[10px] font-inter-extraLight border border-borderColor bg-transparent text-primary focus:border-black focus:outline-none focus:ring-0`
+          `  focus:shadow-outline relative z-30 block w-full tracking-widest placeholder:text-[#333232] placeholder:text-[10px] font-inter-extraLight border border-borderColor bg-transparent text-primary focus:border-black focus:outline-none focus:ring-0`
         )}
         rows={rows}
         cols={cols}

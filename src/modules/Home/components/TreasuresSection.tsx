@@ -1,5 +1,6 @@
 import { Container } from "../../../components/Container";
 import { images } from "../../../assets/images";
+import FadeInOnScroll from "../../../components/FadeInScroll";
 
 const TreasureData = [
   {
@@ -41,10 +42,16 @@ const TreasuresSection = () => {
         <div className="grid sm:grid-cols-2 items-center gap-7">
           {TreasureData?.map((item, i) => (
             <div className="relative" key={i}>
-              <img src={item.src} alt={item.dec} />
-              <p className="absolute top-1/2 -translate-y-1/2 left-1/2 whitespace-nowrap -translate-x-1/2 font-crimson-regular text-3xl text-white">
-                {item.dec}
-              </p>
+              <FadeInOnScroll>
+                <img
+                  src={item.src}
+                  alt={item.dec}
+                  className="mx-auto sm:mx-0"
+                />
+                <p className="absolute top-1/2 -translate-y-1/2 left-1/2 whitespace-nowrap -translate-x-1/2 font-crimson-regular text-3xl text-white">
+                  {item.dec}
+                </p>
+              </FadeInOnScroll>
             </div>
           ))}
         </div>
