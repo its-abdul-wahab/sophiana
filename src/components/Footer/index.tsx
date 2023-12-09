@@ -12,8 +12,6 @@ export default function Footer() {
   const location = useLocation();
   const { pathname } = location;
 
-  console.log(pathname, "pathname");
-
   return (
     <>
       <footer
