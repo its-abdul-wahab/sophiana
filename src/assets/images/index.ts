@@ -9,6 +9,7 @@ import network from "./network.png";
 import contact from "./contact.png";
 import about from "./about.png";
 import coming from "./coming-soon.png";
+import linkPreview from "./link.jpeg";
 
 export const images = {
   banner,
@@ -22,4 +23,5 @@ export const images = {
   contact,
   about,
   coming,
+  linkPreview,
 };

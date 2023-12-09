@@ -7,9 +7,20 @@ const ComingSoon = () => {
   return (
     <>
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>Sophiana | Coming-Soon</title>
-        <link rel="canonical" href="" />
+        <meta charSet="UTF-8" />
+        <title>Explore Exquisite Jewels, Watches & Art by SOPHIANA</title>
+        <meta
+          name="description"
+          content="Captivating collection of luxury jewels, watches, and art at SOPHIANA. Find your perfect piece and experience personalized service. Shop now!"
+        />
+        <meta
+          name="keywords"
+          content="Vintage jewelry, Estate jewelry, Antique jewelry, Art Deco jewelry, Victorian jewelry, Haute joaillerie, Fine jewelry, Luxury jewelry, Diamond jewelry, Gold jewelry, Diamonds, Rubies, Emeralds, Antique diamond ring, Vintage diamond earrings, Art Deco sapphire necklace, Vintage pearl bracelet, Antique emerald pendant, Estate gold bangle, Vintage cameo brooch, Antique opal ring, Vintage garnet necklace, Antique turquoise earrings, Antique filigree jewelry, Vintage enamel jewelry, Antique gemstone jewelry, Vintage silver jewelry, Antique costume jewelry, Vintage signed jewelry, Vintage designer jewelry, Vintage jewelry for sale, Vintage jewelry near me, Where to buy vintage jewelry online, Buy jewelry online, Jewelry near me, Exquisite vintage & estate jewels, High jewellery, Designer jewelry collections, Important gemstones, Vintage diamond rings, Antique diamond earrings, Art Deco sapphire necklace, Vintage pearl bracelet, Antique emerald pendant, Estate gold bangle, Vintage cameo brooch, Antique opal ring, Vintage garnet necklace, Antique turquoise earrings, Vintage filigree jewelry, Vintage enamel jewelry, Antique gemstone jewelry, Vintage silver jewelry, Antique costume jewelry."
+        />
+        <link rel="dofollow" href="https://sophiana.vercel.app/" />
+        <link rel="canonical" href="https://sophiana.vercel.app/" />
+        <meta property="og:image" content={images.linkPreview} />
+        <meta property="og:image:secure_url" content={images.linkPreview} />
       </Helmet>
       <div
         className="bg-no-repeat bg-cover bg-center  h-[calc(100vh-6.31rem)] sm:h-[calc(100vh-20.31rem)] bg-fixed text-secondary text-center flex flex-col justify-center items-center"
