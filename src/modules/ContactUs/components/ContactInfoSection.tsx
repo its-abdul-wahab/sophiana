@@ -4,15 +4,18 @@ import Input from "../../../components/forms/Input";
 import FormCheck from "../../../components/forms/FormCheck";
 import Textarea from "../../../components/forms/Textarea";
 import Button from "../../../components/Button";
+import { Parallax } from "react-scroll-parallax";
 
 const TreasuresSection = () => {
   return (
     <div className="sm:py-[6.35rem] bg-skin">
       <Container className="!px-0 sm:!px-4">
         <div className="flex justify-between items-center sm:flex-row flex-col gap-[3.5rem] xl:gap-[6.875rem]">
-          <div className="flex-1 ">
-            <img src={images.contact} alt="contact" />
-          </div>
+          <Parallax translateY={["100px", "-100px"]}>
+            <div className="flex-1 ">
+              <img src={images.contact} alt="contact" />
+            </div>
+          </Parallax>
           <form className="w-full sm:w-[40%] px-6 sm:px-0 space-y-2">
             <div className="flex gap-2">
               <Input placeholder="FIRST NAME*" />

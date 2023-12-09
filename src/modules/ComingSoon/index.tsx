@@ -12,7 +12,7 @@ const ComingSoon = () => {
         <link rel="canonical" href="" />
       </Helmet>
       <div
-        className="bg-no-repeat bg-cover bg-left  h-[calc(100vh-6.31rem)] sm:h-[calc(100vh-20.31rem)] bg-fixed text-secondary text-center flex flex-col justify-center items-center"
+        className="bg-no-repeat bg-cover bg-center  h-[calc(100vh-6.31rem)] sm:h-[calc(100vh-20.31rem)] bg-fixed text-secondary text-center flex flex-col justify-center items-center"
         style={{ backgroundImage: `url(${images.coming})` }}
       >
         <div className="max-w-[564px] mx-auto mb-8 sm:mb-10">
