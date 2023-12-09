@@ -82,13 +82,15 @@ const PartnershipSection = () => {
             </Parallax>
           </div>
         </Parallax>
-        <div className="text-center mt-20">
-          <Link to="/contact-us">
-            <Button color="primary" variant="outline">
-              APPLY AS DEALER
-            </Button>
-          </Link>
-        </div>
+        <Parallax opacity={[0, 1]} easing={"easeOutQuad"}>
+          <div className="text-center mt-20">
+            <Link to="/contact-us">
+              <Button color="primary" variant="outline">
+                APPLY AS DEALER
+              </Button>
+            </Link>
+          </div>
+        </Parallax>
       </Container>
     </div>
   );

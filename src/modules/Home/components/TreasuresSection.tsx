@@ -45,7 +45,11 @@ const TreasuresSection = () => {
         <div className="grid sm:grid-cols-2 items-center gap-7">
           {TreasureData?.map((item, i) => (
             <div className="relative" key={i}>
-              <Parallax opacity={[0, 1]} easing={"easeOutQuad"}>
+              <Parallax
+                opacity={[0, 1]}
+                easing={"easeOutQuad"}
+                translateY={["100px", "-60px"]}
+              >
                 <img
                   src={item.src}
                   alt={item.dec}
