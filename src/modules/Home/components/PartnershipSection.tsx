@@ -2,7 +2,7 @@ import Button from "../../../components/Button";
 import { Container } from "../../../components/Container";
 import { images } from "../../../assets/images";
 import { Link } from "react-router-dom";
-import FadeInOnScroll from "../../../components/FadeInScroll";
+import { Parallax } from "react-scroll-parallax";
 
 const PartnershipSection = () => {
   return (
@@ -27,18 +27,18 @@ const PartnershipSection = () => {
         </p>
       </div>
       <Container className="mt-8 !px-0 sm:!px-4 sm:mt-[8.75rem]">
-        <div className="flex justify-between items-center sm:flex-row flex-col gap-[5.5rem] xl:gap-[9.25rem]">
-          <div className="w-full sm:w-auto flex-1">
-            <FadeInOnScroll>
-              <img
-                src={images.partner_1}
-                alt="GLOBAL REACH"
-                className="w-full sm:w-auto object-cover"
-              />
-            </FadeInOnScroll>
-          </div>
-          <div className="flex-1 px-10 sm:px-0">
-            <FadeInOnScroll>
+        <Parallax opacity={[0, 1]} shouldAlwaysCompleteAnimation={true}>
+          <div className="flex justify-between items-center sm:flex-row flex-col gap-[5.5rem] xl:gap-[9.25rem]">
+            <div className="w-full sm:w-auto flex-1">
+              <Parallax translateY={["100px", "-100px"]}>
+                <img
+                  src={images.partner_1}
+                  alt="GLOBAL REACH"
+                  className="w-full sm:w-auto object-cover"
+                />
+              </Parallax>
+            </div>
+            <div className="flex-1 px-10 sm:px-0">
               <h3 className="text-2xl xl:text-3xl mb-4 font-cormorant-semibold uppercase">
                 GLOBAL REACH
               </h3>
@@ -50,32 +50,28 @@ const PartnershipSection = () => {
                 engaged clientele, enhancing your brand visibility and sales
                 potential.
               </p>
-            </FadeInOnScroll>
+            </div>
           </div>
-        </div>
+        </Parallax>
         <div className="flex mt-[3.75rem] justify-between items-center sm:flex-row flex-col gap-[5.5rem] xl:gap-[9.25rem]">
           <div className="flex-1 px-10 sm:px-0">
-            <FadeInOnScroll>
-              <h3 className="text-2xl xl:text-3xl mb-4 font-cormorant-semibold uppercase">
-                a win-win Opportunity
-              </h3>
-              <p className="text-base xl:text-lg font-crimson-regular sm:leading-snug">
-                Not only can we showcase your creations to a wide audience, but
-                we also collaborate with our partners to promote their products,
-                ensuring they reach the right audiences. Our sales expertise and
-                network support bridge the gap between East and West, making
-                sales happen seamlessly.
-              </p>
-            </FadeInOnScroll>
+            <h3 className="text-2xl xl:text-3xl mb-4 font-cormorant-semibold uppercase">
+              a win-win Opportunity
+            </h3>
+            <p className="text-base xl:text-lg font-crimson-regular sm:leading-snug">
+              Not only can we showcase your creations to a wide audience, but we
+              also collaborate with our partners to promote their products,
+              ensuring they reach the right audiences. Our sales expertise and
+              network support bridge the gap between East and West, making sales
+              happen seamlessly.
+            </p>
           </div>
           <div className="w-full sm:w-auto flex-1">
-            <FadeInOnScroll>
-              <img
-                src={images.partner_2}
-                alt="A win-win Opportunity"
-                className="w-full sm:w-auto object-cover"
-              />
-            </FadeInOnScroll>
+            <img
+              src={images.partner_2}
+              alt="A win-win Opportunity"
+              className="w-full sm:w-auto object-cover"
+            />
           </div>
         </div>
         <div className="text-center mt-20">
