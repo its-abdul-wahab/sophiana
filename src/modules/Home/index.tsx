@@ -5,7 +5,6 @@ import ResellerSection from "./components/ResellerSection";
 import SophianaSection from "./components/SophianaSection";
 import ScrollBehavior from "../../components/ScrollBehavior";
 import { Helmet } from "react-helmet";
-import { images } from "../../assets/images";
 
 const Home = () => {
   return (
@@ -25,8 +24,8 @@ const Home = () => {
         />
         <link rel="dofollow" href="https://sophiana.vercel.app/" />
         <link rel="canonical" href="https://sophiana.vercel.app/" />
-        <meta property="og:image" content={images.linkPreview} />
-        <meta property="og:image:secure_url" content={images.linkPreview} />
+        {/* <meta property="og:image" content={linkPreview} />
+        <meta property="og:image:secure_url" content={linkPreview} /> */}
       </Helmet>
       <BannerSection />
       <SophianaSection />

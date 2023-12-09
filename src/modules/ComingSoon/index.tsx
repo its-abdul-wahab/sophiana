@@ -19,8 +19,6 @@ const ComingSoon = () => {
         />
         <link rel="dofollow" href="https://sophiana.vercel.app/" />
         <link rel="canonical" href="https://sophiana.vercel.app/" />
-        <meta property="og:image" content={images.linkPreview} />
-        <meta property="og:image:secure_url" content={images.linkPreview} />
       </Helmet>
       <div
         className="bg-no-repeat bg-cover bg-center  h-[calc(100vh-6.31rem)] sm:h-[calc(100vh-20.31rem)] bg-fixed text-secondary text-center flex flex-col justify-center items-center"

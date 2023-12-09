@@ -1,7 +1,6 @@
 import { Helmet } from "react-helmet";
 import BannerSection from "./components/BannersSection";
 import ContactInfoSection from "./components/ContactInfoSection";
-import { images } from "../../assets/images";
 
 const ContactUs = () => {
   return (
@@ -19,8 +18,6 @@ const ContactUs = () => {
         />
         <link rel="dofollow" href="https://sophiana.vercel.app/" />
         <link rel="canonical" href="https://sophiana.vercel.app/" />
-        <meta property="og:image" content={images.linkPreview} />
-        <meta property="og:image:secure_url" content={images.linkPreview} />
       </Helmet>
       <BannerSection />
       <ContactInfoSection />
