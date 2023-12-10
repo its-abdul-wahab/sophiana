@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Button from "../../components/Button";
 import { images } from "../../assets/images";
 import { Helmet } from "react-helmet";
+import { scrollToTop } from "../../utils";
 
 const AboutUs = () => {
   return (
@@ -37,7 +38,9 @@ const AboutUs = () => {
           </p>
         </div>
         <Link to="/contact-us">
-          <Button className="w-[216px]">GET IN TOUCH</Button>
+          <Button className="w-[216px]" onClick={scrollToTop}>
+            GET IN TOUCH
+          </Button>
         </Link>
       </div>
     </>

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Button from "../../components/Button";
 import { images } from "../../assets/images";
 import { Helmet } from "react-helmet";
+import { scrollToTop } from "../../utils";
 
 const ComingSoon = () => {
   return (
@@ -33,11 +34,15 @@ const ComingSoon = () => {
             tuned.
           </p>
         </div>
-        <Link to="/contact-us">
+        <Link to="/contact-us" onClick={scrollToTop}>
           <Button className="w-[216px]">JOIN AS DEALER</Button>
         </Link>
         <Link to="/contact-us">
-          <Button className="mt-[18px] w-[216px]" variant="outline">
+          <Button
+            className="mt-[18px] w-[216px]"
+            variant="outline"
+            onClick={scrollToTop}
+          >
             JOIN AS SHOPPER
           </Button>
         </Link>

@@ -2,6 +2,7 @@ import { Button } from "../../../components/Button";
 import { images } from "../../../assets/images";
 import { Link } from "react-router-dom";
 import { ParallaxBanner } from "react-scroll-parallax";
+import { scrollToTop } from "../../../utils";
 
 const BannerSection = () => {
   return (
@@ -20,10 +21,16 @@ const BannerSection = () => {
                 </span>
               </h1>
               <Link to="/contact-us">
-                <Button className="w-[216px]">JOIN AS DEALER</Button>
+                <Button className="w-[216px]" onClick={scrollToTop}>
+                  JOIN AS DEALER
+                </Button>
               </Link>
               <Link to="/contact-us">
-                <Button className="mt-[18px] w-[216px]" variant="outline">
+                <Button
+                  className="mt-[18px] w-[216px]"
+                  variant="outline"
+                  onClick={scrollToTop}
+                >
                   JOIN AS SHOPPER
                 </Button>
               </Link>

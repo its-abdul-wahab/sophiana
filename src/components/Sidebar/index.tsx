@@ -2,13 +2,14 @@ import { Link } from "react-router-dom";
 import { Cross } from "../../assets/icons";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { scrollToTop } from "../../utils";
 interface IProps {
   setSidebarOpen?: Function;
   sidebarOpen?: boolean;
 }
 
 const Sidebar = ({ sidebarOpen, setSidebarOpen }: IProps) => {
-   let navigate = useNavigate();
+  let navigate = useNavigate();
   useEffect(() => {
     const body = document.body;
     if (sidebarOpen) {
@@ -22,12 +23,15 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: IProps) => {
     };
   }, [sidebarOpen]);
 
-    
+  const handleNavigation = () => {
+    navigate("/#partner");
+    setSidebarOpen && setSidebarOpen(false);
+  };
 
-    const handleNavigation = () => {
-      navigate("/#partner");
-      setSidebarOpen && setSidebarOpen(false);
-    };
+  const handleClose = () => {
+    setSidebarOpen && setSidebarOpen(false);
+    scrollToTop();
+  };
   return (
     <>
       <div
@@ -42,7 +46,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: IProps) => {
         } flex h-screen grow flex-col bg-white fixed z-40 top-0 lg:hidden duration-500 pb-10 xs:w-full w-[393px] sm:w-[620px] md:w-[750px]`}
       >
         <nav className="h-full duration-0 bg-white relative ">
-          <Link to="/" onClick={() => setSidebarOpen && setSidebarOpen(false)}>
+          <Link to="/" onClick={handleClose}>
             <h1 className="text-black mt-16 sm:mt-[109px] ml-11 sm:ml-[93px] text-lg sm:text-2xl font-inter-regular">
               HOME
             </h1>
@@ -63,7 +67,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: IProps) => {
               </a>
               <Link to="/contact-us">
                 <li
-                  onClick={() => setSidebarOpen && setSidebarOpen(false)}
+                  onClick={handleClose}
                   className="text-black mt-5 text-lg sm:text-2xl font-inter-regular italic"
                 >
                   SIGN UP NOW
@@ -77,7 +81,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: IProps) => {
             <ul className="pl-6 sm:ml-16">
               <Link to="/coming-soon">
                 <li
-                  onClick={() => setSidebarOpen && setSidebarOpen(false)}
+                  onClick={handleClose}
                   className="text-black  mt-8 text-lg sm:text-2xl font-inter-regular"
                 >
                   PRODUCT LISTINGS
@@ -85,7 +89,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: IProps) => {
               </Link>
               <Link to="/contact-us">
                 <li
-                  onClick={() => setSidebarOpen && setSidebarOpen(false)}
+                  onClick={handleClose}
                   className="text-black mt-5 text-lg sm:text-2xl font-inter-regular italic"
                 >
                   GET ACCESS
@@ -101,7 +105,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: IProps) => {
             <ul className="pl-6 sm:ml-16">
               <Link to="/contact-us">
                 <li
-                  onClick={() => setSidebarOpen && setSidebarOpen(false)}
+                  onClick={handleClose}
                   className="text-black mt-8 text-lg sm:text-2xl font-inter-regular"
                 >
                   PERSONAL SHOPPER SERVICE
@@ -109,7 +113,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: IProps) => {
               </Link>
               <Link to="/about-us">
                 <li
-                  onClick={() => setSidebarOpen && setSidebarOpen(false)}
+                  onClick={handleClose}
                   className="text-black mt-5 text-lg sm:text-2xl font-inter-regular"
                 >
                   ABOUT <span className="italic">SOPHIANA</span>

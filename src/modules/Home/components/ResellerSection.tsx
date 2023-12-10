@@ -3,13 +3,10 @@ import { Container } from "../../../components/Container";
 import { images } from "../../../assets/images";
 import { Link } from "react-router-dom";
 import { Parallax } from "react-scroll-parallax";
+import { scrollToTop } from "../../../utils";
 
 const ResellerSection = () => {
-    const scrollToTop = () => {
-      window.scrollTo({
-        top: 0,
-      });
-    };
+
   return (
     <div className="sm:py-[6.35rem]">
       <Container className="!px-0 sm:!px-4">
