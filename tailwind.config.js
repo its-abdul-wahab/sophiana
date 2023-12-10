@@ -10,6 +10,8 @@ module.exports = {
         "crimson-regular": ["CrimsonText-Regular", "serif"],
         "crimson-semibold": ["CrimsonText-SemiBold", "serif"],
         "cormorant-garamond": ["Cormorant Garamond", "serif"],
+        "cormorant-garamond-italic": ["CormorantGaramond-Italic", "serif"],
+        "garamond-medium-italic": ["Garamond-MediumItalic", "serif"],
         "inter-regular": ["Inter-Regular", "serif"],
         "inter-light": ["Inter-Light", "serif"],
         "inter-extraLight": ["Inter-ExtraLight", "serif"],

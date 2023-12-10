@@ -25,7 +25,6 @@ const TreasuresSection = () => {
   return (
     <div className="py-[3.5rem] sm:py-[6.35rem] bg-skin">
       <Container>
-        <Parallax opacity={[0, 1]} easing={"easeOutQuad"}>
           <div className="flex w-full justify-center border-t border-primary relative mb-14">
             <div className="absolute top-1/2 -translate-y-1/2">
               <h2 className="text-lg sm:text-xl lg:text-3xl px-6 bg-skin whitespace-nowrap font-crimson-regular">
@@ -33,21 +32,16 @@ const TreasuresSection = () => {
               </h2>
             </div>
           </div>
-        </Parallax>
-        <Parallax opacity={[0, 1]} easing={"easeOutQuad"}>
           <p className="text-lg font-crimson-regular max-w-[636px] mb-12 leading-snug">
             From everyday fine jewelry and high jewelry to vintage & estate
             jewels or important gemstones. We curate the finest collections from
             independent jewelry houses and designers, connecting them with our
             reseller network and their discerning clientele.
           </p>
-        </Parallax>
         <div className="grid sm:grid-cols-2 items-center gap-7">
           {TreasureData?.map((item, i) => (
             <div className="relative" key={i}>
               <Parallax
-                opacity={[0, 1]}
-                easing={"easeOutQuad"}
                 translateY={["100px", "-60px"]}
               >
                 <img

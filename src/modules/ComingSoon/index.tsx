@@ -36,9 +36,11 @@ const ComingSoon = () => {
         <Link to="/contact-us">
           <Button className="w-[216px]">JOIN AS DEALER</Button>
         </Link>
-        <Button className="mt-[18px] w-[216px]" variant="outline">
-          JOIN AS SHOPPER
-        </Button>
+        <Link to="/contact-us">
+          <Button className="mt-[18px] w-[216px]" variant="outline">
+            JOIN AS SHOPPER
+          </Button>
+        </Link>
       </div>
     </>
   );

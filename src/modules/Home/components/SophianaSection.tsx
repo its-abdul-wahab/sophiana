@@ -1,10 +1,8 @@
-import { Parallax } from "react-scroll-parallax";
 import { Container } from "../../../components/Container";
 
 const SophianaSection = () => {
   return (
     <div className="py-[65px] bg-skin">
-      <Parallax opacity={[0, 1]} easing={"easeOutQuad"}>
         <Container className="!max-w-[533px]">
           <h3 className="text-left sm:text-center text-3xl mb-4 font-cormorant-semibold">
             What is Sophiana?
@@ -18,7 +16,6 @@ const SophianaSection = () => {
             your brand visibility and maximize sales potential.
           </p>
         </Container>
-      </Parallax>
     </div>
   );
 };

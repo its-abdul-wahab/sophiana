@@ -4,7 +4,7 @@ const navigation = {
   main: [
     { name: "+ 1-212-345-6789" },
     { name: "Email: team@Sophiana.com" },
-    { name: "LOS ANGELES   HONG KONG " },
+    { name: "LOS ANGELES | HONG KONG" },
   ],
 };
 

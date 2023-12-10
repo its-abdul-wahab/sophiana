@@ -7,7 +7,6 @@ import { Parallax } from "react-scroll-parallax";
 const PartnershipSection = () => {
   return (
     <div className="py-[3.5rem] sm:py-[6.35rem]" id="partner">
-      <Parallax opacity={[0, 1]} easing={"easeOutQuad"}>
         <div className="w-full justify-center border-t border-primary relative hidden sm:flex">
           <div className="absolute top-1/2 -translate-y-1/2 bg-white">
             <h2 className="text-3xl px-10 lg:px-16  whitespace-nowrap font-crimson-regular">
@@ -18,8 +17,6 @@ const PartnershipSection = () => {
             </p>
           </div>
         </div>
-      </Parallax>
-      <Parallax opacity={[0, 1]} easing={"easeOutQuad"}>
         <div className="sm:hidden">
           <h2 className="text-2xl px-10 text-center whitespace-nowrap pb-3 font-crimson-regular">
             PARTNERSHIP PROGRAM
@@ -29,9 +26,7 @@ const PartnershipSection = () => {
             For Brands, Designers & Jewelers
           </p>
         </div>
-      </Parallax>
       <Container className="mt-8 !px-0 sm:!px-4 sm:mt-[8.75rem]">
-        <Parallax opacity={[0, 1]} easing={"easeOutQuad"}>
           <div className="flex justify-between items-center sm:flex-row flex-col gap-[5.5rem] xl:gap-[9.25rem]">
             <div className="w-full sm:w-auto flex-1">
               <Parallax translateY={["100px", "-100px"]}>
@@ -56,8 +51,6 @@ const PartnershipSection = () => {
               </p>
             </div>
           </div>
-        </Parallax>
-        <Parallax opacity={[0, 1]} easing={"easeOutQuad"}>
           <div className="flex mt-[3.75rem] justify-between items-center sm:flex-row flex-col gap-[5.5rem] xl:gap-[9.25rem]">
             <div className="flex-1 px-10 sm:px-0">
               <h3 className="text-2xl xl:text-3xl mb-4 font-cormorant-semibold uppercase">
@@ -81,8 +74,6 @@ const PartnershipSection = () => {
               </div>
             </Parallax>
           </div>
-        </Parallax>
-        <Parallax opacity={[0, 1]} easing={"easeOutQuad"}>
           <div className="text-center mt-20">
             <Link to="/contact-us">
               <Button color="primary" variant="outline">
@@ -90,7 +81,6 @@ const PartnershipSection = () => {
               </Button>
             </Link>
           </div>
-        </Parallax>
       </Container>
     </div>
   );

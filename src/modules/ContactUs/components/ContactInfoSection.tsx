@@ -47,7 +47,7 @@ const TreasuresSection = () => {
               <Button
                 variant="outline"
                 color="primary"
-                className="!text-sm w-[247px] !py-1 !font-inter-medium !border-borderColor"
+                className="!text-sm w-[247px] !py-1 uppercase !font-inter-medium !border-borderColor"
               >
                 Submit
               </Button>

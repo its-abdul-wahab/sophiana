@@ -24,8 +24,6 @@ const Home = () => {
         />
         <link rel="dofollow" href="https://sophiana.vercel.app/" />
         <link rel="canonical" href="https://sophiana.vercel.app/" />
-        {/* <meta property="og:image" content={linkPreview} />
-        <meta property="og:image:secure_url" content={linkPreview} /> */}
       </Helmet>
       <BannerSection />
       <SophianaSection />

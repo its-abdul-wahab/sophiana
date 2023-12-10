@@ -34,6 +34,25 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+    font-family: 'CormorantGaramond-Italic';
+    src: url('../public/assets/fonts/CormorantGaramond-Italic.woff2') format('woff2'),
+        url('../public/assets/fonts/CormorantGaramond-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Garamond-MediumItalic';
+    src: url('../public/assets/fonts/CormorantGaramond-MediumItalic.woff2') format('woff2'),
+        url('../public/assets/fonts/CormorantGaramond-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
 
 @font-face {
   font-family: "CrimsonText-Regular";

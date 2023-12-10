@@ -12,16 +12,21 @@ const BannerSection = () => {
           speed: -15,
           children: (
             <div className="absolute inset-0 flex flex-col items-center justify-center">
-              <h1 className="max-w-[506px] mx-auto text-2xl sm:text-[2.5rem] mb-7 leading-snug  font-cormorant-medium lg:not-italic italic">
-                 Luxury Selling & Curating <br /> REDEFINED
+              <h1 className="max-w-[506px] mx-auto text-2xl sm:text-[2.5rem] mb-7 leading-snug  font-cormorant-garamond-italic italic">
+                Luxury Selling & Curating{" "}
+                <span className="block italic font-garamond-medium-italic">
+                  {" "}
+                  REDEFINED
+                </span>
               </h1>
               <Link to="/contact-us">
-                 <Button className="w-[216px]">JOIN AS DEALER</Button>
-               
+                <Button className="w-[216px]">JOIN AS DEALER</Button>
               </Link>
-              <Button className="mt-[18px] w-[216px]" variant="outline">
-                 JOIN AS SHOPPER
-              </Button>
+              <Link to="/contact-us">
+                <Button className="mt-[18px] w-[216px]" variant="outline">
+                  JOIN AS SHOPPER
+                </Button>
+              </Link>
             </div>
           ),
         },
