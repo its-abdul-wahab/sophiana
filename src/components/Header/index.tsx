@@ -3,6 +3,7 @@ import { Container } from "../Container";
 import { Menu } from "../../assets/icons";
 import Sidebar from "../Sidebar";
 import { useState } from "react";
+import { scrollToTop } from "../../utils";
 
 const LeftNavigation = [
   {
@@ -53,7 +54,7 @@ const Header = () => {
                 </Link>
               ))}
             </ul>
-            <Link to="/">
+            <Link to="/" onClick={scrollToTop}>
               <h2 className="text-base sm:text-xl tracking-[5px] font-inter-light text-secondary">
                 SOPHIANA
               </h2>
